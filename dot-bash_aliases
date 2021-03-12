@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Together, these aliases allow color when piping ls output through less
+#alias ls='CLICOLOR_FORCE=1 ls -G'
+#alias less='less -R'
+
+# Display battery life as a percentage
+alias battery='echo $(cat /sys/class/power_supply/BAT1/capacity)%'
+
+# Open journal or commonplace entry
+alias journal='__new_journal_entry'
+alias commonplace='__new_commonplace_entry'
+
+# Encrypt/decrypt a file
+alias encrypt='__encrypt_entry'
+alias decrypt='__decrypt_entry'
